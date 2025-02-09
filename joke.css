@@ -1,0 +1,99 @@
+
+body{
+    background-color: #EBEAFF;
+}
+
+#computer{
+border-style:solid;
+position:absolute;
+width:42%;
+height:40%;
+padding-top:40px;
+padding-bottom:40px;
+/* padding-right:2px;
+padding-left:2px; */
+border-radius:5%;
+border-width:30px;
+left:50%;
+top:50.30%;
+transform:translate(-50%,-50%);
+background-color: antiquewhite; 
+}
+
+#joke{
+    display: flex;
+    justify-content:cen ter;
+    font-family:monospace;
+    font-size:xx-large;
+    border-style: dotted;
+    border-color:black;
+    position:relative;
+    width:70%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:  #F2EFE7;
+}
+
+#laugh{
+    position:relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#stand1{
+    width:5%;
+    height:13%;
+    position:absolute;
+    background-color: black;
+    left:47%;
+    top:80%;
+}
+
+#stand2{
+    width:19%;
+    height:5%;
+    position:absolute;
+    background-color: black;
+    left:40%;
+    top:90%;
+}
+
+#plant{       
+    position:absolute;
+    left: 10%;
+    top: 59%;
+} 
+
+.trapezoid {
+    position: absolute;
+    z-index:-1;
+    width: 79%;
+    height: 140px;
+    background: #D1BB9E;
+    transform: perspective(10px) rotateX(1deg);
+    left:11%;
+    top:80%;
+  }
+
+  #shake-image {
+    transition: transform 0.2s ease-in-out; /* Adjust duration and easing */
+  }
+
+  #shake-image:active { /* Trigger on click (mousedown) */
+    animation: shake 0.5s; /* Call the shake animation */
+    animation-iteration-count: 1; /* Shake only once per click */
+  }
+
+  @keyframes shake {
+    0% { transform: translate(0, 0); }
+    10% { transform: translate(-5px, -5px); }
+    20% { transform: translate(5px, 0); }
+    30% { transform: translate(-5px, 5px); }
+    40% { transform: translate(5px, 0); }
+    50% { transform: translate(-5px, -5px); }
+    60% { transform: translate(5px, 0); }
+    70% { transform: translate(-5px, 5px); }
+    80% { transform: translate(5px, 0); }
+    90% { transform: translate(-5px, -5px); }
+    100% { transform: translate(0, 0); }
+  }
